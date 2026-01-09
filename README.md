@@ -56,3 +56,8 @@ Creates a new product in the database.
       "name": "insert1"
     }
 ![img3.png](img3.png)
+
+* **Database reflecting insertation** `
+
+![img_4.png](img4.png)
+
