@@ -57,7 +57,60 @@ Creates a new product in the database.
     }
 ![img3.png](img3.png)
 
-* **Database reflecting insertation** `
+* **Database reflecting insertation** 
 
-![img_4.png](img4.png)
+![img4.png](img4.png)
 
+### 2. Get All Products (GET)
+Retrieves a list of all available products.
+* **URL:** `/api/v1/products`
+* **Response Status:** `200 OK`
+
+![img5.png](img5.png)
+
+### 3. Get Product by ID (GET)
+Retrieves a specific product by its unique ID.
+* **URL:** `/api/v1/products/{id}`
+* **Example:** `/api/v1/products/1`
+* **Response Status:** `200 OK` 
+
+![img6.png](img6.png)
+
+### 4. Update Product (PUT)
+Updates the name of an existing product.
+* **URL:** `/api/v1/products/{id}`
+* **Body:**
+    ```json
+    {
+      "name": "Updated Name"
+    }
+    ```
+* **Response Status:** `200 OK`
+
+![img7.png](img7.png)
+
+* **Database reflection:**
+
+![img8.png](img8.png)
+
+
+### 5. Delete Product (DELETE)
+Removes a product from the database.
+* **URL:** `/api/v1/products/{id}`
+* **Response Status:** `204 No Content`
+
+![img9.png](img9.png)
+
+* **Database reflection:**
+
+![img10.png](img10.png)
+
+## Error Handling
+The application handles errors gracefully. If a user requests an ID that doesn't exist, the API returns a friendly 404 JSON response instead of a 500 Server Error.
+
+
+![img11.png](img11.png)
+
+**Product not found on put**
+
+![img12.png](img12.png)
