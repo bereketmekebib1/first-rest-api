@@ -26,3 +26,33 @@ The project also includes Swagger UI, which is used to document and test the API
 2.  Open the project in IntelliJ IDEA.
 3.  Run the `FirstRestApiSpringApplication.java` class.
 4.  The server will start on `http://localhost:8080`.
+
+## API Documentation (Swagger UI)
+The application includes Swagger UI to visualize and interact with the API endpoints.
+* **URL:** `http://localhost:8080/swagger-ui/index.html`
+
+*(Screenshot showing the list of all endpoints in the browser)*
+
+![img1.png](img1.png)
+
+## Database (H2 Console)
+The application uses an H2 in-memory database.
+* **URL:** `http://localhost:8080/console`
+* **JDBC URL:** `jdbc:h2:mem:testdb`
+* **Username:** `sa`
+* **Password:** *(Empty)*
+
+console login page
+![img2.png](img2.png) 
+
+## Endpoints & Use Cases
+
+### 1. Create a Product (POST)
+Creates a new product in the database.
+* **URL:** `/api/v1/products`
+* **Body:**
+    ```json
+    {
+      "name": "insert1"
+    }
+![img3.png](img3.png)
